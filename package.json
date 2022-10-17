@@ -1,0 +1,23 @@
+{
+  "name": "eureka_project2",
+  "version": "1.0.0",
+  "description": "- [Project Description](#project-description)\r - [Links](#links)\r - [User Story](#user-story)\r - [Acceptance Criteria](#acceptance-criteria)\r - [Screenshot](#screenshot)\r - [Walkthrough Video](#walkthrough-video)\r - [Credits](#credits)\r - [License](#license)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strongie/Eureka_Project2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Strongie/Eureka_Project2/issues"
+  },
+  "homepage": "https://github.com/Strongie/Eureka_Project2#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
