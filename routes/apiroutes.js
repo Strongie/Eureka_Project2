@@ -1,5 +1,5 @@
 const express = require('express');
-var app = modules.exports = express();
+var app = module.exports = express();
 const path = require('path');
 const fs = require('fs');
 
