@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 const path = require('path');
+const db = require('./db/db.json');
 
 
 const PORT = process.env.port || 3001;
@@ -14,7 +15,7 @@ app.use(express.static('public'));
 
 
 app.use('./routes/apiroutes', require('./routes/apiroutes'));
-app.use('./routes/htmlroutes', require('./routes/apiroutes'));
+app.use('./routes/htmlroutes', require('./routes/htmlroutes'));
 
 
 
