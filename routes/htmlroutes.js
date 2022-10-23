@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 
-module.exports = (html) => {
+module.exports = html => {
 
 // GET Route for index.html
 app.get('/', (req, res) =>

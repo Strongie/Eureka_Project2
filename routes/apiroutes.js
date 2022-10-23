@@ -3,7 +3,7 @@ var app = module.exports = express();
 const path = require('path');
 const fs = require('fs');
 
-module.exports = (api) => {
+module.exports = api => {
 
 app.get('./api/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '../db/db.json'));
