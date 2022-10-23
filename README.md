@@ -6,12 +6,8 @@
 - [Links](#links)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
-- [Screenshot](#screenshot)
-- [Walkthrough Video](#walkthrough-video)
 - [Credits](#credits)
 - [License](#license)
-
-
 
 
 
@@ -23,7 +19,7 @@ To create an application called Note Taker that can be used to write and save no
 
 Github: https://github.com/Strongie/Eureka_Project2
 
-
+Heroku: 
 
 ## User Story
 
@@ -47,9 +43,6 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
-## Screenshot
-
-## Walkthrough Video
 
 ## Credit
 
