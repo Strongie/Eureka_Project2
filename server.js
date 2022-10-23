@@ -17,8 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 
-app.use('/api', api);
-app.use('/', html);
+app.use('/api', apiroutes);
+app.use('/', htmlroutes);
 
 
 
