@@ -53,6 +53,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Credit
 
+AskBCS learning assistants for a lot of patience.
+
 ## License
 
-
+This file was created by Nick Strong as a project for the Sydney University Coding Bootcamp and Trilogy Education Services.
