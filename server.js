@@ -6,6 +6,8 @@ const db = require('./db/db.json');
 const apiroutes = require('./routes/apiroutes.js');
 const htmlroutes = require('./routes/htmlroutes.js');
 
+
+
 const PORT = process.env.port || 3001;
 
 // Middleware for parsing JSON and urlencoded form data
@@ -15,8 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 
-app.use('/api', apiRoutes);
-app.use('/', htmlRoutes);
+app.use('/api', api);
+app.use('/', html);
 
 
 

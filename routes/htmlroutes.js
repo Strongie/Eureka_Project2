@@ -4,6 +4,8 @@ const express = require('express');
 const app = express();
 
 
+module.exports = (html) => {
+
 // GET Route for index.html
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
@@ -15,3 +17,4 @@ app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
+};
