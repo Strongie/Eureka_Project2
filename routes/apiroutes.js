@@ -1,9 +1,10 @@
 const express = require('express');
-var app = module.exports = express();
+// var app = module.exports = express();
 const path = require('path');
 const fs = require('fs');
+const app = express.Router();
 
-module.exports = api => {
+// module.exports = api => {
 
 app.get('./api/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '../db/db.json'));
@@ -32,4 +33,6 @@ const uuid = () => {
       .substring(1);
   };
 
-};
+// 
+
+module.exports = app;

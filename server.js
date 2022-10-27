@@ -5,7 +5,7 @@ const path = require('path');
 const db = require('./db/db.json');
 const apiroutes = require('./routes/apiroutes.js');
 const htmlroutes = require('./routes/htmlroutes.js');
-const router = express.Router()
+const router = express.Router();
 
 
 const PORT = process.env.port || 3001;
