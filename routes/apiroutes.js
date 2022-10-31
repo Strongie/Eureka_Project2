@@ -3,15 +3,16 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 // const app = express.Router();
+// const db = require('../db/db.json');
 
-module.exports = function (app) {
+module.exports = (app) => {
 
-app.get('./api/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, '../db/db.json'));
-})
+    app.get('/api/notes', (req, res) => {
+        res.sendFile(path.join(__dirname, '../db/db.json'));
+      });
 
 //create new note
-app.post('./api/notes', (req, res) => {
+app.post('/api/notes', (req, res) => {
     let db = fs.readFileSync('db/db.json');
     db = JSON.parse(db);
     res.json(db);
@@ -19,7 +20,7 @@ app.post('./api/notes', (req, res) => {
         title: req.body.tile,
         text: req.body.text,
         id: uuid()
-    }
+    };
 //push new note
     db.push(newNote);
     fs.writeFileSync("db/db.json", JSON.stringyfy(db));
