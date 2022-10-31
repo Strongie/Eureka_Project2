@@ -19,7 +19,7 @@ To create an application called Note Taker that can be used to write and save no
 
 Github: https://github.com/Strongie/Eureka_Project2
 
-Heroku: 
+Heroku: https://dashboard.heroku.com/apps/still-plateau-19550
 
 ## User Story
 
