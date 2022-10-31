@@ -3,9 +3,9 @@ const app = express();
 const fs = require('fs');
 const path = require('path');
 const db = require('./db/db.json');
-const apiroutes = require('./routes/apiroutes.js');
-const htmlroutes = require('./routes/htmlroutes.js');
-const router = express.Router();
+// const apiroutes = require('./routes/apiroutes.js');
+// const htmlroutes = require('./routes/htmlroutes.js');
+// const router = express.Router();
 
 
 const PORT = process.env.port || 3001;
@@ -17,10 +17,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 
-app.use('/api', apiroutes);
-app.use('/', htmlroutes);
-
-
+// app.use('/api', apiroutes);
+// app.use('/', htmlroutes);
+require("./routes/apiroutes")(app);
+require("./routes/htmlroutes")(app);
 
 
 // Listening is the last thing Express should do. This sets up the server.
