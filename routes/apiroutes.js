@@ -1,9 +1,7 @@
 const express = require('express');
-// var app = module.exports = express();
 const path = require('path');
 const fs = require('fs');
-// const app = express.Router();
-// const db = require('../db/db.json');
+
 
 module.exports = (app) => {
 
@@ -34,6 +32,4 @@ const uuid = () => {
       .substring(1);
   };
 };
-// // 
 
-// module.exports = app;

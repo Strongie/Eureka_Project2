@@ -1,9 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-// const express = require('express');
-// const express = express();
-// const app = express.Router();
-// const db = require('./db/db.json');
+
 
 
 module.exports = function (app) {
